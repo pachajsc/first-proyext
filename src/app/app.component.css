@@ -1,0 +1,15 @@
+button{
+	display: block;
+	margin:auto;
+}
+li{
+	font-family:arial; 
+	cursor: pointer;
+}
+agm-map {
+  height: 500px;
+}
+
+.num_par{
+	background-color: whitesmoke;
+}

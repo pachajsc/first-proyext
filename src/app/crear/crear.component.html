@@ -1,0 +1,45 @@
+<div class="container">
+
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a routerLink="/lugares">Lugares</a></li>
+	    <li class="breadcrumb-item active"  aria-current="page">Crear Lugar</li>
+	  </ol>
+	</nav>
+
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="exampleInputPassword1">Name</label>
+    		<input type="text" class="form-control" id="" placeholder="Name" [(ngModel)]="lugar.nombre">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="">Hora</label>
+    		<input type="number" class="form-control" id="" placeholder="Password" [(ngModel)]="lugar.hora">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="">Description</label>
+    		<input type="text" class="form-control" id="" placeholder="Message" [(ngModel)]="lugar.descripcion">
+		</div>
+	</div>
+	<h3>Luga de origen</h3>
+	<div class="row">
+		<div class="col-md-4 form-group">
+			<label for="exampleInputPassword1">Calle</label>
+    		<input type="text" class="form-control" id="" placeholder="Calle" [(ngModel)]="lugar.calle">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="">Ciudad</label>
+    		<input type="text" class="form-control" id="" placeholder="Ciudad" [(ngModel)]="lugar.ciudad">
+		</div>
+		<div class="col-md-4 form-group">
+			<label for="">Pais</label>
+    		<input type="text" class="form-control" id="" placeholder="Pais" [(ngModel)]="lugar.pais">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<a class="btn btn-primary" (click)="guardarLugar()">Enviar</a>
+			<a routerLink="/lugares" class="btn btn-default">Cancelar</a>
+		</div>
+	</div>
+</div>
